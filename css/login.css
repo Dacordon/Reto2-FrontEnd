@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(108, 112, 112);
+    height:100vh;
+}
+#login .container #login-row #login-column #login-box{
+    margin-top: 50px;
+    max-width: 600px;
+    height: 380px;
+    border: 1px solid #7e7c7c ;
+    background-color:rgb(240, 235, 235);
+}
+
+#login .container #login-row #login-column #login-box #login-form {
+    
+    padding: 20px;
+    color: rgb(97, 95, 95);
+}
+#login
+    .container
+    #login-row
+    #login-column
+    #login-box
+    #login-form
+    #register-link{
+        margin-top: -85px;
+        
+    }
+form i {
+        margin-left: -30px;
+        cursor: pointer;
+    }
+#toggle {
+    margin-left: 10px; 
+    cursor: pointer;
+}
+
+.nav-bar{
+    width:100vw;
+    height: 10rem;
+    margin: 0 0 1.5rem 0;
+
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+    background-color:rgb(60, 66, 66);
+    color:white;
+}
+
+img{
+    margin: 0 1rem 0 1rem
+}
+

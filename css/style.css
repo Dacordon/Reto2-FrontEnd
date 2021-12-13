@@ -1,0 +1,8 @@
+body {
+    background-image: url("/img/gray-background2.jpg");
+    background-color: black;
+    }
+.container {
+    background-color: white;
+    min-width:max-content;
+}
