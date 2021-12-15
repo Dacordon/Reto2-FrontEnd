@@ -59,12 +59,16 @@ function registrar() {
                 $("#mensajes").hide(1000);
                 listar();
                 estadoInicial();
+                alert("Se ha registrado el producto satisfactoriamente");
                 //limpia el contenido de los campos del formulario nuevo
                 $("#reference").val(""),
                 $("#brand").val(""),
                 $("#category").val(""),
+                $("#material").val(""),
                 $("#description").val(""),
-                $("#price").val("") 
+                $("#price").val(""),
+                $("#quantity").val(""),
+                $("#photography").val("") 
             },
 
             // código a ejecutar si la petición falla;

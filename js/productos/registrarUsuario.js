@@ -60,6 +60,7 @@ function registrar() {
                 $("#mensajes").hide(1000);
                 listar();
                 estadoInicial();
+                alert("Se ha registrado el usuario satisfactoriamente");
                 //limpia el contenido de los campos del formulario nuevo
                 $("#id").val(""),
                 $("#identification").val(""),

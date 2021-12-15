@@ -27,12 +27,13 @@
        
 
         if (userJS.type=='ASE')
-            opcionesMenu = `<li><a href="ordenes.html" class="card-link">Lista de Ordenes</a></li>`;
+            opcionesMenu = `<button onclick="window.location.href='ordenes.html';"class="btn btn-dark">Creación Ordenes</button><br><br>
+            <button onclick="window.location.href='ordenasesor.html';"class="btn btn-dark">Lista Ordenes</button>`;
         else if (userJS.type=='ADM')
-            opcionesMenu = `<li><a href="usuarios.html" class="card-link">Lista de Usuarios</a></li>
-                            <li><a href="productos.html" class="card-link">Lista de Accesorios</a></li>`;
+            opcionesMenu =  `<button onclick="window.location.href='usuarios.html';"class="btn btn-dark">Usuarios</button><br><br>
+            <button onclick="window.location.href='productos.html';"class="btn btn-dark">Productos</button>`;
         else if (userJS.type=='COORD')
-            opcionesMenu = `<li><a href="estadordenes.html" class="card-link">Aprobar Ordenes</a></li>`;
+            opcionesMenu = `<button onclick="window.location.href='ordenaprobar.html';"class="btn btn-dark">Revisar ordenes</button>`;
 
         $("#opciones").html(opcionesMenu);
     }

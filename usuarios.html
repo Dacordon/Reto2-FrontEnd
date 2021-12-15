@@ -20,7 +20,7 @@
         -->
         <div id="mensajes"></div>
         <br>
-        <a href="menu.html"><img class="img-fluid" src="img/back2.png" alt="Regresar"></a>
+        <a href="menu.html"><img class="img-fluid" src="css/img/back2.png" alt="Regresar"></a>
         
         <button class="btn btn-info" mt-5 id="nuevoRegistro" onclick="activaNuevo();">Registrar Usuario</button>
         
@@ -44,11 +44,16 @@
             <br><br>
             <input type="text" id="email" placeholder="Email" onkeydown="upperCaseF(this)">
             <br><br>
-            <input type="text" id="password" placeholder="Contraseña" onkeydown="upperCaseF(this)">
+            <input type="password" id="password" placeholder="Contraseña" onkeydown="upperCaseF(this)">
             <br><br>
             <input type="text" id="zone" placeholder="Zona" onkeydown="upperCaseF(this)">
             <br><br>
-            <input type="text" id="type" placeholder="Tipo" onkeydown="upperCaseF(this)">
+            <!-- <input type="text" id="type" placeholder="Tipo" onkeydown="upperCaseF(this)"> -->
+            <select name="type" id="type">
+                <option value="ASE">ASE</option>
+                <option value="COORD" selected>COORD</option>
+                <option value="ADM">ADM</option>   
+            </select>
             <br><br>
             <button onclick="registrar();" class="btn btn-success">Guardar</button>
             <button onclick="estadoInicial();" class="btn btn-secondary">Cancelar</button>
@@ -75,7 +80,12 @@
             <br><br>
             <input type="text" id="zoneEdit" placeholder="Zona" onkeydown="upperCaseF(this)">
             <br><br>
-            <input type="text" id="typeEdit" placeholder="Tipo" onkeydown="upperCaseF(this)">           
+            <!-- <input type="text" id="typeEdit" placeholder="Tipo" onkeydown="upperCaseF(this)">            -->
+            <select name="type" id="typeEdit">
+                <option value="ASE">ASE</option>
+                <option value="COORD" selected>COORD</option>
+                <option value="ADM">ADM</option>   
+            </select>
             <br><br>
             <button onclick="actualizar();" class="btn btn-success">Actualizar</button>
             <button onclick="estadoInicial();" class="btn btn-secondary">Cancelar</button>
@@ -91,6 +101,7 @@
             <button onclick="estadoInicial();" class="btn btn-secondary">Cancelar</button>
         </div>
     </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/productos/listarUsuarios.js"></script>
     <script src="js/productos/eliminarUsuario.js"></script>

@@ -1,8 +1,13 @@
 body {
-    background-image: url("/img/gray-background2.jpg");
+    background-image: url("img/gray-background2.jpg");
     background-color: black;
     }
 .container {
-    background-color: white;
+    background: linear-gradient(70deg, rgb(131, 190, 160), white);
     min-width:max-content;
+    text-align: center;
+    border-radius:1rem;
+    font-family:'Lucida Sans', Arial, sans-serif;
+    color: rgb(100, 97, 97);
+    padding: 2rem;
 }

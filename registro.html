@@ -39,15 +39,20 @@
                             <br><br>
                             <input type="text" id="email" placeholder="Email" onkeydown="upperCaseF(this)">
                             <br><br>
-                            <input type="text" id="password" placeholder="Contraseña" onkeydown="upperCaseF(this)">
+                            <input type="password" id="password" placeholder="Contraseña" onkeydown="upperCaseF(this)">
                             <br><br>
                             <input type="text" id="zone" placeholder="Zona" onkeydown="upperCaseF(this)">
                             <br><br>
-                            <input type="text" id="type" placeholder="Tipo" onkeydown="upperCaseF(this)">
+                            <!-- <input type="text" id="type" placeholder="Tipo" onkeydown="upperCaseF(this)"> -->
+                            <select name="type" id="type">
+                                <option value="COORD">COORD</option>
+                                <option value="ASE" selected>ASE</option>
+                                <option value="ADM">ADM</option>
+                              </select>
                             <br><br>
                             <button onclick="registrar();" class="btn btn-success">Guardar</button>
                             <!-- <button onclick="estadoInicial();" class="btn btn-secondary">Cancelar</button> -->
-                            <a href="index2.html">Cancelar</a>
+                            <a href="index.html">Cancelar</a>
                             <br>
                             <div class="form-group text-center">
                                 <label for="remember-me" class="text1">
